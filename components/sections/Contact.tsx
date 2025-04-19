@@ -1,13 +1,15 @@
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { useTranslation } from '../../hooks/useTranslation';
 
 export default function Contact() {
+  const t = useTranslation();
+
   return (
     <div className="grid grid-cols-1 gap-4">
       <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-4 border border-mintGreen/20 shadow-lg transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
-        <h2 className="text-xl text-mintGreen mb-2 animate-fadeIn">Contacto</h2>
+        <h2 className="text-xl text-mintGreen mb-2 animate-fadeIn">{t.contact.title}</h2>
         <p className="text-sm text-gray-300 mb-2 leading-relaxed animate-fadeInUp">
-          ¿Tenés un proyecto en mente? ¡Me encantaría escuchar sobre él!
-          Puedes contactarme a través de cualquiera de los siguientes medios:
+          {t.contact.description}
         </p>
         <div className="space-y-2">
           <a
@@ -38,9 +40,9 @@ export default function Contact() {
         </div>
       </div>
       <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-4 border border-mintGreen/20 shadow-lg transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
-        <h2 className="text-xl text-mintGreen mb-2 animate-fadeIn">Ubicación</h2>
+        <h2 className="text-xl text-mintGreen mb-2 animate-fadeIn">{t.contact.location.title}</h2>
         <p className="text-sm text-gray-300 leading-relaxed animate-fadeInUp">
-          Actualmente basado en Buenos Aires, Argentina
+          {t.contact.location.description}
         </p>
         <div className="mt-2 animate-fadeInUp">
           <iframe

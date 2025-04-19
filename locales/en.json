@@ -1,0 +1,33 @@
+{
+    "about": {
+        "title": "About Me",
+        "description": "Hi! I am Ain Moises Ponce, a full-stack developer passionate about creating innovative and efficient web solutions. With experience in developing modern applications using technologies like React, Node.js, and both relational and non-relational databases, among other technologies.",
+        "experience": {
+            "title": "Experience",
+            "description": "I have worked on various projects, from small applications to complex enterprise systems. My focus is on writing clean, maintainable, and scalable code."
+        },
+        "approach": {
+            "title": "Approach",
+            "description": "I specialize in modern web application development, with a strong emphasis on user experience and performance. I'm always learning new technologies and best practices to improve my skills."
+        }
+    },
+    "contact": {
+        "title": "Contact",
+        "description": "Do you have a project in mind? I'd love to hear about it! You can contact me through any of the following means:",
+        "location": {
+            "title": "Location",
+            "description": "Currently based in Buenos Aires, Argentina"
+        }
+    },
+    "skills": {
+        "frontend": {
+            "title": "Frontend"
+        },
+        "backend": {
+            "title": "Backend"
+        },
+        "tools": {
+            "title": "Tools and Others"
+        }
+    }
+}
