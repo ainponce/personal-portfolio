@@ -1,34 +1,58 @@
-import { FaEnvelope, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 export default function Contact() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-6 border border-mintGreen/20 shadow-lg">
-        <h2 className="text-2xl text-mintGreen mb-4">Email</h2>
-        <div className="bg-black/30 rounded-xl p-4 min-h-[200px] flex flex-col items-center justify-center">
-          <a 
-            href="mailto:ainponce@gmail.com" 
-            className="text-mintGreen hover:text-mintGreenLight transition-colors duration-300"
-          >
-            <FaEnvelope size={48} />
-          </a>
-        </div>
-      </div>
-      <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-6 border border-mintGreen/20 shadow-lg">
-        <h2 className="text-2xl text-mintGreen mb-4">LinkedIn</h2>
-        <div className="bg-black/30 rounded-xl p-4 min-h-[200px] flex flex-col items-center justify-center">
+    <div className="grid grid-cols-1 gap-4">
+      <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-4 border border-mintGreen/20 shadow-lg transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
+        <h2 className="text-xl text-mintGreen mb-2 animate-fadeIn">Contacto</h2>
+        <p className="text-sm text-gray-300 mb-2 leading-relaxed animate-fadeInUp">
+          ¿Tenés un proyecto en mente? ¡Me encantaría escuchar sobre él!
+          Puedes contactarme a través de cualquiera de los siguientes medios:
+        </p>
+        <div className="space-y-2">
           <a
-            href="https://www.linkedin.com/in/ainponce/"
-            className="text-mintGreen hover:text-mintGreenLight transition-colors duration-300"
+            href="mailto:ponce.ain@gmail.com"
+            className="flex items-center space-x-2 text-gray-300 hover:text-mintGreen transition-colors duration-300 group"
           >
-            <FaLinkedin size={48} />
+            <FaEnvelope className="text-lg group-hover:scale-110 transition-transform duration-300" />
+            <span className="text-sm">ponce.ain@gmail.com</span>
+          </a>
+          <a
+            href="https://github.com/ainponce"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center space-x-2 text-gray-300 hover:text-mintGreen transition-colors duration-300 group"
+          >
+            <FaGithub className="text-lg group-hover:scale-110 transition-transform duration-300" />
+            <span className="text-sm">GitHub</span>
+          </a>
+          <a
+            href="https://linkedin.com/in/ainponce"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center space-x-2 text-gray-300 hover:text-mintGreen transition-colors duration-300 group"
+          >
+            <FaLinkedin className="text-lg group-hover:scale-110 transition-transform duration-300" />
+            <span className="text-sm">LinkedIn</span>
           </a>
         </div>
       </div>
-      <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-6 border border-mintGreen/20 shadow-lg col-span-1 md:col-span-2">
-        <h2 className="text-2xl text-mintGreen mb-4">Disponibilidad</h2>
-        <div className="bg-black/30 rounded-xl p-4 min-h-[200px] flex items-center justify-center">
-          <p className="text-gray-300">Actualmente disponible para nuevos proyectos y colaboraciones. 🚀</p>
+      <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-4 border border-mintGreen/20 shadow-lg transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
+        <h2 className="text-xl text-mintGreen mb-2 animate-fadeIn">Ubicación</h2>
+        <p className="text-sm text-gray-300 leading-relaxed animate-fadeInUp">
+          Actualmente basado en Buenos Aires, Argentina
+        </p>
+        <div className="mt-2 animate-fadeInUp">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.27456538852!2d-58.51569975125118!3d-34.61579604824612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1745104254283!5m2!1ses-419!2sar"
+            width="100%"
+            height="380"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="rounded-lg transform transition-transform duration-300 hover:scale-[1.02]"
+          ></iframe>
         </div>
       </div>
     </div>

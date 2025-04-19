@@ -58,44 +58,56 @@ const skills = [
 export default function Skills() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-6 border border-mintGreen/20 shadow-lg">
-        <h2 className="text-2xl text-mintGreen mb-4">Frontend</h2>
+      <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-6 border border-mintGreen/20 shadow-lg transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
+        <h2 className="text-2xl text-mintGreen mb-4 animate-fadeIn">Frontend</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
           {skills.slice(0, 9).map((skill, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center p-4 bg-black/30 rounded-xl hover:scale-105 transition-transform duration-300"
+              className="flex flex-col items-center justify-center p-4 bg-black/30 rounded-xl hover:scale-105 transition-all duration-300 hover:bg-black/40 group"
             >
-              <div className="text-3xl text-mintGreen mb-2">{skill.icon}</div>
-              <p className="text-sm text-gray-300">{skill.name}</p>
+              <div className="text-3xl text-mintGreen mb-2 group-hover:scale-110 transition-transform duration-300">
+                {skill.icon}
+              </div>
+              <p className="text-sm text-gray-300 group-hover:text-mintGreen transition-colors duration-300">
+                {skill.name}
+              </p>
             </div>
           ))}
         </div>
       </div>
-      <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-6 border border-mintGreen/20 shadow-lg">
-        <h2 className="text-2xl text-mintGreen mb-4">Backend</h2>
+      <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-6 border border-mintGreen/20 shadow-lg transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
+        <h2 className="text-2xl text-mintGreen mb-4 animate-fadeIn">Backend</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
           {skills.slice(9, 18).map((skill, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center p-4 bg-black/30 rounded-xl hover:scale-105 transition-transform duration-300"
+              className="flex flex-col items-center justify-center p-4 bg-black/30 rounded-xl hover:scale-105 transition-all duration-300 hover:bg-black/40 group"
             >
-              <div className="text-3xl text-mintGreen mb-2">{skill.icon}</div>
-              <p className="text-sm text-gray-300">{skill.name}</p>
+              <div className="text-3xl text-mintGreen mb-2 group-hover:scale-110 transition-transform duration-300">
+                {skill.icon}
+              </div>
+              <p className="text-sm text-gray-300 group-hover:text-mintGreen transition-colors duration-300">
+                {skill.name}
+              </p>
             </div>
           ))}
         </div>
       </div>
-      <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-6 border border-mintGreen/20 shadow-lg col-span-1 md:col-span-2">
-        <h2 className="text-2xl text-mintGreen mb-4">Herramientas y Otros</h2>
+      <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-6 border border-mintGreen/20 shadow-lg col-span-1 md:col-span-2 transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
+        <h2 className="text-2xl text-mintGreen mb-4 animate-fadeIn">Herramientas y Otros</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
           {skills.slice(18).map((skill, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center p-4 bg-black/30 rounded-xl hover:scale-105 transition-transform duration-300"
+              className="flex flex-col items-center justify-center p-4 bg-black/30 rounded-xl hover:scale-105 transition-all duration-300 hover:bg-black/40 group"
             >
-              <div className="text-3xl text-mintGreen mb-2">{skill.icon}</div>
-              <p className="text-sm text-gray-300">{skill.name}</p>
+              <div className="text-3xl text-mintGreen mb-2 group-hover:scale-110 transition-transform duration-300">
+                {skill.icon}
+              </div>
+              <p className="text-sm text-gray-300 group-hover:text-mintGreen transition-colors duration-300">
+                {skill.name}
+              </p>
             </div>
           ))}
         </div>

@@ -1,8 +1,6 @@
 import { useState } from "react";
-import Navbar from "../components/Navbar";
 import About from "../components/sections/About";
 import Skills from "../components/sections/Skills";
-import Projects from "../components/sections/Projects";
 import Contact from "../components/sections/Contact";
 import Head from "next/head";
 
@@ -32,10 +30,6 @@ export default function Home() {
               <Contact />
             </div>
 
-            {/* Projects Section - Full Width */}
-            <div className="col-span-1 md:col-span-2 lg:col-span-3">
-              <Projects />
-            </div>
           </div>
         </div>
       </div>

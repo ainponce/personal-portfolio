@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/Ain%20Ponce/Downloads/portfolio-nextjs/pages/_app.tsx"],"sourcesContent":["import \"../styles/globals.css\";\nimport type { AppProps } from \"next/app\";\n\nexport default function App({ Component, pageProps }: AppProps) {\n  return (\n      <div className=\"min-h-screen transition-colors duration-300\">\n        <Component {...pageProps} />\n      </div>\n  );\n}\n"],"names":[],"mappings":";;;;;;AAGe,SAAS,IAAI,EAAE,SAAS,EAAE,SAAS,EAAY;IAC5D,qBACI,qKAAC;QAAI,WAAU;kBACb,cAAA,qKAAC;YAAW,GAAG,SAAS;;;;;;;;;;;AAGhC","debugId":null}}]
-}
