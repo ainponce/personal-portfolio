@@ -25,7 +25,8 @@ import {
   SiPhpmyadmin,
   SiHibernate,
 } from "react-icons/si";
-import { FaDatabase } from "react-icons/fa";
+import { useTranslation } from '../../hooks/useTranslation';
+import LanguageToggle from '../LanguageToggle';
 
 const skills = [
   { name: "HTML", icon: <SiHtml5 /> },
@@ -56,10 +57,11 @@ const skills = [
 ];
 
 export default function Skills() {
+  const t = useTranslation();
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-6 border border-mintGreen/20 shadow-lg transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
-        <h2 className="text-2xl text-mintGreen mb-4 animate-fadeIn">Frontend</h2>
+        <h2 className="text-2xl text-mintGreen mb-4 animate-fadeIn">{t.skills.frontend.title}</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
           {skills.slice(0, 9).map((skill, index) => (
             <div
@@ -77,7 +79,7 @@ export default function Skills() {
         </div>
       </div>
       <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-6 border border-mintGreen/20 shadow-lg transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
-        <h2 className="text-2xl text-mintGreen mb-4 animate-fadeIn">Backend</h2>
+        <h2 className="text-2xl text-mintGreen mb-4 animate-fadeIn">{t.skills.backend.title}</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
           {skills.slice(9, 18).map((skill, index) => (
             <div
@@ -95,7 +97,7 @@ export default function Skills() {
         </div>
       </div>
       <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-6 border border-mintGreen/20 shadow-lg col-span-1 md:col-span-2 transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
-        <h2 className="text-2xl text-mintGreen mb-4 animate-fadeIn">Herramientas y Otros</h2>
+        <h2 className="text-2xl text-mintGreen mb-4 animate-fadeIn">{t.skills.tools.title}</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
           {skills.slice(18).map((skill, index) => (
             <div
