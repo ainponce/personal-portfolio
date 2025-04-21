@@ -63,7 +63,7 @@ export default function Skills() {
       <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-6 border border-mintGreen/20 shadow-lg transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
         <h2 className="text-2xl text-mintGreen mb-4 animate-fadeIn">{t.skills.frontend.title}</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-          {skills.slice(0, 9).map((skill, index) => (
+          {skills.slice(0, 10).map((skill, index) => (
             <div
               key={index}
               className="flex flex-col items-center justify-center p-4 bg-black/30 rounded-xl hover:scale-105 transition-all duration-300 hover:bg-black/40 group"
@@ -81,7 +81,7 @@ export default function Skills() {
       <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-6 border border-mintGreen/20 shadow-lg transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
         <h2 className="text-2xl text-mintGreen mb-4 animate-fadeIn">{t.skills.backend.title}</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-          {skills.slice(9, 18).map((skill, index) => (
+          {skills.slice(10, 18).map((skill, index) => (
             <div
               key={index}
               className="flex flex-col items-center justify-center p-4 bg-black/30 rounded-xl hover:scale-105 transition-all duration-300 hover:bg-black/40 group"
