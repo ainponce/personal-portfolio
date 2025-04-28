@@ -60,13 +60,13 @@ export default function Skills() {
   const t = useTranslation();
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-6 border border-mintGreen/20 shadow-lg transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
+      <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-6 border border-mintGreen/20 shadow-lg transition-all duration-300 hover:scale-105 hover:border-mintGreen/40 hover:shadow-xl">
         <h2 className="text-2xl text-mintGreen mb-4 animate-fadeIn">{t.skills.frontend.title}</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
           {skills.slice(0, 9).map((skill, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center p-4 bg-black/30 rounded-xl hover:scale-105 transition-all duration-300 hover:bg-black/40 group"
+              className="flex flex-col items-center justify-center p-4 bg-black/30 rounded-xl transition-all duration-300 hover:scale-105 hover:bg-black/40 hover:border hover:border-mintGreen/20 group"
             >
               <div className="text-3xl text-mintGreen mb-2 group-hover:scale-110 transition-transform duration-300">
                 {skill.icon}
@@ -78,13 +78,13 @@ export default function Skills() {
           ))}
         </div>
       </div>
-      <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-6 border border-mintGreen/20 shadow-lg transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
+      <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-6 border border-mintGreen/20 shadow-lg transition-all duration-300 hover:scale-105 hover:border-mintGreen/40 hover:shadow-xl">
         <h2 className="text-2xl text-mintGreen mb-4 animate-fadeIn">{t.skills.backend.title}</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
           {skills.slice(10, 18).map((skill, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center p-4 bg-black/30 rounded-xl hover:scale-105 transition-all duration-300 hover:bg-black/40 group"
+              className="flex flex-col items-center justify-center p-4 bg-black/30 rounded-xl transition-all duration-300 hover:scale-105 hover:bg-black/40 hover:border hover:border-mintGreen/20 group"
             >
               <div className="text-3xl text-mintGreen mb-2 group-hover:scale-110 transition-transform duration-300">
                 {skill.icon}
@@ -96,13 +96,13 @@ export default function Skills() {
           ))}
         </div>
       </div>
-      <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-6 border border-mintGreen/20 shadow-lg col-span-1 md:col-span-2 transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
+      <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-6 border border-mintGreen/20 shadow-lg transition-all duration-300 hover:scale-105 hover:border-mintGreen/40 hover:shadow-xl">
         <h2 className="text-2xl text-mintGreen mb-4 animate-fadeIn">{t.skills.tools.title}</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
           {skills.slice(18).map((skill, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center p-4 bg-black/30 rounded-xl hover:scale-105 transition-all duration-300 hover:bg-black/40 group"
+              className="flex flex-col items-center justify-center p-4 bg-black/30 rounded-xl transition-all duration-300 hover:scale-105 hover:bg-black/40 hover:border hover:border-mintGreen/20 group"
             >
               <div className="text-3xl text-mintGreen mb-2 group-hover:scale-110 transition-transform duration-300">
                 {skill.icon}

@@ -6,7 +6,7 @@ export default function Contact() {
 
   return (
     <div className="grid grid-cols-1 gap-4">
-      <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-4 border border-mintGreen/20 shadow-lg transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
+      <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-4 border border-mintGreen/20 shadow-lg transition-all duration-300 hover:scale-105 hover:border-mintGreen/40 hover:shadow-xl">
         <h2 className="text-xl text-mintGreen mb-2 animate-fadeIn">{t.contact.title}</h2>
         <p className="text-sm text-gray-300 mb-2 leading-relaxed animate-fadeInUp">
           {t.contact.description}
@@ -39,7 +39,7 @@ export default function Contact() {
           </a>
         </div>
       </div>
-      <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-4 border border-mintGreen/20 shadow-lg transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
+      <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-4 border border-mintGreen/20 shadow-lg transition-all duration-300 hover:scale-105 hover:border-mintGreen/40 hover:shadow-xl">
         <h2 className="text-xl text-mintGreen mb-2 animate-fadeIn">{t.contact.location.title}</h2>
         <p className="text-sm text-gray-300 leading-relaxed animate-fadeInUp">
           {t.contact.location.description}
@@ -53,7 +53,7 @@ export default function Contact() {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            className="rounded-lg transform transition-transform duration-300 hover:scale-[1.02]"
+            className="rounded-lg transition-transform duration-300 hover:scale-105"
           ></iframe>
         </div>
       </div>
