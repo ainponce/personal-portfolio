@@ -3,6 +3,7 @@ import About from "../components/sections/About";
 import Skills from "../components/sections/Skills";
 import Contact from "../components/sections/Contact";
 import Head from "next/head";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -16,20 +17,34 @@ export default function Home() {
         <div className="container mx-auto px-4 py-20">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* About Section - Full Width */}
-            <div className="col-span-1 md:col-span-2 lg:col-span-3">
+            <motion.div 
+              className="col-span-1 md:col-span-2 lg:col-span-3"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+            >
               <About />
-            </div>
+            </motion.div>
 
             {/* Skills Section - 2/3 Width */}
-            <div className="col-span-1 md:col-span-2">
+            <motion.div 
+              className="col-span-1 md:col-span-2"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
               <Skills />
-            </div>
+            </motion.div>
 
             {/* Contact Section - 1/3 Width */}
-            <div className="col-span-1">
+            <motion.div 
+              className="col-span-1"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+            >
               <Contact />
-            </div>
-
+            </motion.div>
           </div>
         </div>
       </div>
