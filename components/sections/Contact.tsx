@@ -8,60 +8,60 @@ export default function Contact() {
   return (
     <div className="grid grid-cols-1 gap-4">
       <motion.div 
-        className="bg-black/20 backdrop-blur-sm rounded-2xl p-4 border border-mintGreen/20 shadow-lg transition-all duration-300 hover:scale-105 hover:border-mintGreen/40 hover:shadow-[0_0_15px_rgba(74,222,128,0.3)]"
+        className="bg-gradient-to-br from-black/30 to-black/10 backdrop-blur-sm rounded-2xl p-8 border border-mintGreen/20 shadow-lg transition-all duration-300 hover:scale-105 hover:border-mintGreen/40 hover:shadow-[0_0_20px_rgba(74,222,128,0.4)]"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h2 className="text-xl text-mintGreen mb-2">{t.contact.title}</h2>
-        <p className="text-sm text-gray-300 mb-2 leading-relaxed">
+        <h2 className="text-xl font-semibold text-mintGreen mb-4 bg-clip-text text-transparent bg-gradient-to-r from-mintGreen to-mintGreenLight">{t.contact.title}</h2>
+        <p className="text-sm text-gray-300 mb-6 leading-relaxed">
           {t.contact.description}
         </p>
-        <div className="space-y-2">
+        <div className="space-y-3">
           <motion.a
             href="mailto:ponce.ain@gmail.com"
-            className="flex items-center space-x-2 text-gray-300 hover:text-mintGreen transition-colors duration-300 group hover:shadow-[0_0_10px_rgba(74,222,128,0.2)] p-2 rounded-lg"
+            className="flex items-center space-x-3 text-gray-300 hover:text-mintGreen transition-colors duration-300 group hover:shadow-[0_0_15px_rgba(74,222,128,0.3)] p-3 rounded-xl bg-gradient-to-br from-black/40 to-black/20"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.3, delay: 0.1 }}
           >
-            <FaEnvelope className="text-lg group-hover:scale-110 transition-transform duration-300" />
+            <FaEnvelope className="text-xl group-hover:scale-110 transition-transform duration-300" />
             <span className="text-sm">ponce.ain@gmail.com</span>
           </motion.a>
           <motion.a
             href="https://github.com/ainponce"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center space-x-2 text-gray-300 hover:text-mintGreen transition-colors duration-300 group hover:shadow-[0_0_10px_rgba(74,222,128,0.2)] p-2 rounded-lg"
+            className="flex items-center space-x-3 text-gray-300 hover:text-mintGreen transition-colors duration-300 group hover:shadow-[0_0_15px_rgba(74,222,128,0.3)] p-3 rounded-xl bg-gradient-to-br from-black/40 to-black/20"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.3, delay: 0.2 }}
           >
-            <FaGithub className="text-lg group-hover:scale-110 transition-transform duration-300" />
+            <FaGithub className="text-xl group-hover:scale-110 transition-transform duration-300" />
             <span className="text-sm">GitHub</span>
           </motion.a>
           <motion.a
             href="https://linkedin.com/in/ainponce"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center space-x-2 text-gray-300 hover:text-mintGreen transition-colors duration-300 group hover:shadow-[0_0_10px_rgba(74,222,128,0.2)] p-2 rounded-lg"
+            className="flex items-center space-x-3 text-gray-300 hover:text-mintGreen transition-colors duration-300 group hover:shadow-[0_0_15px_rgba(74,222,128,0.3)] p-3 rounded-xl bg-gradient-to-br from-black/40 to-black/20"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.3, delay: 0.3 }}
           >
-            <FaLinkedin className="text-lg group-hover:scale-110 transition-transform duration-300" />
+            <FaLinkedin className="text-xl group-hover:scale-110 transition-transform duration-300" />
             <span className="text-sm">LinkedIn</span>
           </motion.a>
         </div>
       </motion.div>
       <motion.div 
-        className="bg-black/20 backdrop-blur-sm rounded-2xl p-4 border border-mintGreen/20 shadow-lg transition-all duration-300 hover:scale-105 hover:border-mintGreen/40 hover:shadow-[0_0_15px_rgba(74,222,128,0.3)]"
+        className="bg-gradient-to-br from-black/30 to-black/10 backdrop-blur-sm rounded-2xl p-8 border border-mintGreen/20 shadow-lg transition-all duration-300 hover:scale-105 hover:border-mintGreen/40 hover:shadow-[0_0_20px_rgba(74,222,128,0.4)]"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.1 }}
       >
-        <h2 className="text-xl text-mintGreen mb-2">{t.contact.location.title}</h2>
-        <p className="text-sm text-gray-300 leading-relaxed">
+        <h2 className="text-xl font-semibold text-mintGreen mb-4 bg-clip-text text-transparent bg-gradient-to-r from-mintGreen to-mintGreenLight">{t.contact.location.title}</h2>
+        <p className="text-sm text-gray-300 leading-relaxed mb-6">
           {t.contact.location.description}
         </p>
         <motion.div 
@@ -78,7 +78,7 @@ export default function Contact() {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            className="rounded-lg transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(74,222,128,0.3)]"
+            className="rounded-xl transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(74,222,128,0.4)]"
           ></iframe>
         </motion.div>
       </motion.div>

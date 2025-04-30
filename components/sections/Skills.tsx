@@ -62,17 +62,17 @@ export default function Skills() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       <motion.div 
-        className="bg-black/20 backdrop-blur-sm rounded-2xl p-6 border border-mintGreen/20 shadow-lg transition-all duration-300 hover:scale-105 hover:border-mintGreen/40 hover:shadow-[0_0_15px_rgba(74,222,128,0.3)]"
+        className="bg-gradient-to-br from-black/30 to-black/10 backdrop-blur-sm rounded-2xl p-8 border border-mintGreen/20 shadow-lg transition-all duration-300 hover:scale-105 hover:border-mintGreen/40 hover:shadow-[0_0_20px_rgba(74,222,128,0.4)]"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h2 className="text-2xl text-mintGreen mb-4">{t.skills.frontend.title}</h2>
+        <h2 className="text-2xl font-semibold text-mintGreen mb-6 bg-clip-text text-transparent bg-gradient-to-r from-mintGreen to-mintGreenLight">{t.skills.frontend.title}</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
           {skills.slice(0, 9).map((skill, index) => (
             <motion.div
               key={index}
-              className="flex flex-col items-center justify-center p-4 bg-black/30 rounded-xl transition-all duration-300 hover:scale-105 hover:bg-black/40 hover:border hover:border-mintGreen/20 hover:shadow-[0_0_10px_rgba(74,222,128,0.2)] group"
+              className="flex flex-col items-center justify-center p-4 bg-gradient-to-br from-black/40 to-black/20 rounded-xl transition-all duration-300 hover:scale-105 hover:bg-black/50 hover:border hover:border-mintGreen/20 hover:shadow-[0_0_15px_rgba(74,222,128,0.3)] group"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: index * 0.05 }}
@@ -89,17 +89,17 @@ export default function Skills() {
       </motion.div>
       
       <motion.div 
-        className="bg-black/20 backdrop-blur-sm rounded-2xl p-6 border border-mintGreen/20 shadow-lg transition-all duration-300 hover:scale-105 hover:border-mintGreen/40 hover:shadow-[0_0_15px_rgba(74,222,128,0.3)]"
+        className="bg-gradient-to-br from-black/30 to-black/10 backdrop-blur-sm rounded-2xl p-8 border border-mintGreen/20 shadow-lg transition-all duration-300 hover:scale-105 hover:border-mintGreen/40 hover:shadow-[0_0_20px_rgba(74,222,128,0.4)]"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.1 }}
       >
-        <h2 className="text-2xl text-mintGreen mb-4">{t.skills.backend.title}</h2>
+        <h2 className="text-2xl font-semibold text-mintGreen mb-6 bg-clip-text text-transparent bg-gradient-to-r from-mintGreen to-mintGreenLight">{t.skills.backend.title}</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
           {skills.slice(10, 18).map((skill, index) => (
             <motion.div
               key={index}
-              className="flex flex-col items-center justify-center p-4 bg-black/30 rounded-xl transition-all duration-300 hover:scale-105 hover:bg-black/40 hover:border hover:border-mintGreen/20 hover:shadow-[0_0_10px_rgba(74,222,128,0.2)] group"
+              className="flex flex-col items-center justify-center p-4 bg-gradient-to-br from-black/40 to-black/20 rounded-xl transition-all duration-300 hover:scale-105 hover:bg-black/50 hover:border hover:border-mintGreen/20 hover:shadow-[0_0_15px_rgba(74,222,128,0.3)] group"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: index * 0.05 }}
@@ -116,17 +116,17 @@ export default function Skills() {
       </motion.div>
       
       <motion.div 
-        className="bg-black/20 backdrop-blur-sm rounded-2xl p-6 border border-mintGreen/20 shadow-lg transition-all duration-300 hover:scale-105 hover:border-mintGreen/40 hover:shadow-[0_0_15px_rgba(74,222,128,0.3)]"
+        className="bg-gradient-to-br from-black/30 to-black/10 backdrop-blur-sm rounded-2xl p-8 border border-mintGreen/20 shadow-lg transition-all duration-300 hover:scale-105 hover:border-mintGreen/40 hover:shadow-[0_0_20px_rgba(74,222,128,0.4)]"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <h2 className="text-2xl text-mintGreen mb-4">{t.skills.tools.title}</h2>
+        <h2 className="text-2xl font-semibold text-mintGreen mb-6 bg-clip-text text-transparent bg-gradient-to-r from-mintGreen to-mintGreenLight">{t.skills.tools.title}</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
           {skills.slice(18).map((skill, index) => (
             <motion.div
               key={index}
-              className="flex flex-col items-center justify-center p-4 bg-black/30 rounded-xl transition-all duration-300 hover:scale-105 hover:bg-black/40 hover:border hover:border-mintGreen/20 hover:shadow-[0_0_10px_rgba(74,222,128,0.2)] group"
+              className="flex flex-col items-center justify-center p-4 bg-gradient-to-br from-black/40 to-black/20 rounded-xl transition-all duration-300 hover:scale-105 hover:bg-black/50 hover:border hover:border-mintGreen/20 hover:shadow-[0_0_15px_rgba(74,222,128,0.3)] group"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: index * 0.05 }}
